@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: animal-shorts-job
+    schedule: "0 7 * * *"
+    env: python
+    buildCommand: ""
+    startCommand: "python shorts_downloader.py"
